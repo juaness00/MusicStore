@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Release Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for song in songs %}
+            <tr>
+                <td>
+                    <a href="{% url "songs:detail" song.id %}">{{song.title}}</a>
+                </td>
+                <td>{{song.genre}}</td>
+                <td>{{song.release_year}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock  %}
