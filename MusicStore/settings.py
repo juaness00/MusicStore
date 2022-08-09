@@ -25,7 +25,8 @@ SECRET_KEY = 'll5lwug)auix90t2b1ci-#9aaz+38bjeq3+=^k00ne1d70k+bk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['immense-temple-46492.herokuapp.com']
+ALLOWED_HOSTS = ['immense-temple-46492.herokuapp.com',
+                'localhost',]
 
 
 # Application definition
